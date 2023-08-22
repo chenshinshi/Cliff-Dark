@@ -983,3 +983,22 @@ body.body--win32:has(.fullscreen) .status:hover *{
     border: 3px solid transparent;
     box-shadow: 0 0 0 2px var(--b3-theme-background-light) inset, 0 0 0 3px var(--b3-theme-background-light);
 }
+
+.b3-menu__item {
+   background-color:transparent;
+}
+
+:root {
+    --b3-pdf-selection:var(--b3-theme-primary-lighter) !important;
+    --b3-pdf-background2: hsl(50deg 100% 50%) !important;
+    --b3-pdf-background1: hsl(0deg 100% 88%) !important;
+    --b3-pdf-background4: hsl(100deg 58% 75%) !important;
+    --b3-pdf-background7: hsl(209, 100%, 81%) !important;
+    --b3-pdf-background3: hsl(177deg 46% 80%) !important;
+    --b3-pdf-background6: hsl(259, 100%, 89%) !important;
+    --b3-pdf-background5: hsl(45, 5%, 90%) !important;
+}
+.textLayer .highlight.selected {
+   background-color: transparent;
+   border:2px solid var(--b3-theme-primary);
+}
