@@ -1,0 +1,18 @@
+{
+  "name":   "Cliff Dark",
+  "author": "Crowds21",
+  "url":    "https://github.com/chenshinshi/Cliff-Dark",
+  "version": "3.1.0",
+  "displayName": {
+    "default": "Cliff-Dark"
+  },
+  "description": {
+    "default": "一款适合背景图片插件的夜间主题，由Crowds21制作，chenshinshi适配新版本。"
+  },
+  "readme": {
+    "default": "README.md"
+  },
+  "modes": [
+    "dark"
+  ]
+}
