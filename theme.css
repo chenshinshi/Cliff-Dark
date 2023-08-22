@@ -239,16 +239,16 @@ body{
 }
 /*LeftBar*/
 #dockLeft {
-  display: none;
-  background-color: var(--cliff-main-color) !important;
+  /*display: none;*/
+  background-color: transparent !important;
 }
 .block__icons--active {
   background-color: none;
 }
 /*RigtBar*/
 #dockRight {
-  display: none;
-  background-color: var(--cliff-main-color) !important;
+  /*display: none;*/
+  background-color: transparent !important;
 }
 .graph {
   background: #00000000 !important;
@@ -772,10 +772,10 @@ min-height: 200px !important;
    color:var(--b3-theme-primary);
 }
 .protyle-toolbar {
-  background: var(--b3-theme-primary-lighter);
+  background: #226b65;
   padding:0px 4px;
   border-radius:0px;
-  backdrop-filter: var(--cliff-blur) !important;
+  /*backdrop-filter: var(--cliff-blur) !important;*/
   box-shadow:var(--b3-point-shadow);
 }
 .protyle-wysiwyg span[data-type~=inline-memo] {
