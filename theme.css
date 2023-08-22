@@ -786,7 +786,7 @@ min-height: 200px !important;
     border-bottom: 0px solid !important;
 }
 
-.protyle-wysiwyg span[data-type~="inline-memo"]:hover, .protyle-wysiwyg [data-node-id] span[data-type="file-annotation-ref"]:hover, .b3-typography a:hover, .protyle-wysiwyg [data-node-id] span[data-type="a"]:hover {
+.protyle-wysiwyg span[data-type~="inline-memo"]:hover, .protyle-wysiwyg [data-node-id] span[data-type="file-annotation-ref"]:hover, .b3-typography a:hover, .protyle-wysiwyg [data-node-id] span[data-type="a"]:hover,.protyle-wysiwyg [data-node-id] span[data-type~=block-ref]:hover, .protyle-wysiwyg [data-node-id] span[data-type~=file-annotation-ref]:hover {
     background-color: var(--b3-theme-primary-lightest);
     transition: var(--b3-transition);
 }
@@ -1078,4 +1078,21 @@ box-shadow:var(--b3-theme-primary) 0 0 0 1px inset, var(--b3-theme-primary-light
 }
 [data-name="Calendar-heatmap"] .b3-menu__item--current,[data-name="Calendar-heatmap"] #openViewElement{
    background-color:transparent !important;
+}
+.b3-typography mark, .b3-typography span[data-type~=mark], .protyle-wysiwyg mark, .protyle-wysiwyg span[data-type~=mark] {
+background-color: var(--b3-theme-primary-lighter) !important;
+}
+
+.protyle-wysiwyg [data-node-id] span[data-type~=block-ref], .protyle-wysiwyg [data-node-id] span[data-type~=file-annotation-ref] {
+   opacity:1;
+background: linear-gradient(
+    to right,
+    transparent 0%,
+    transparent 50%,
+    var(--b3-theme-primary) 50%,
+    var(--b3-theme-primary) 100%
+  );
+  background-size: 7px 1px;
+  background-repeat: repeat-x;
+  background-position-y: bottom;
 }
