@@ -607,13 +607,13 @@ body{
 }
 
 /*tags*/
-.protyle-wysiwyg [data-node-id] span[data-type="tag"] {
+/*.protyle-wysiwyg [data-node-id] span[data-type="tag"] {
   color: #fff;
   background-color: #e9967aaa;
   border-radius: 8px;
   border: none;
   padding: 2px;
-}
+}*/
 .b3-typography code:not(.hljs),
 .protyle-wysiwyg code:not(.hljs) {
   background-color: var(--b3-theme-primary-lighter);
@@ -759,7 +759,7 @@ min-height: 200px !important;
     transition: var(--b3-transition);
     padding: 1px 7px;
     border-radius: 20px;
-    color: var(--b3-theme-on-background);
+    color: var(--b3-theme-primary);
     margin: 0 4px;
   font-size: 95%;
 }
@@ -769,7 +769,7 @@ min-height: 200px !important;
 }
 #layouts div.layout__center div[data-type="wnd"] .layout-tab-container .protyle .protyle-content .protyle-wysiwyg [data-node-id] span[data-type="tag"]::after,.protyle-wysiwyg [data-node-id] span[data-type~=tag]::after {
    content:"#";
-   var(--b3-theme-primary);
+   color:var(--b3-theme-primary);
 }
 .protyle-toolbar {
   background: var(--b3-theme-primary-lighter);
@@ -965,7 +965,7 @@ body.body--win32:has(.fullscreen) .status:hover *{
    margin:0px 0px 0px 10px;
 }
 .sy__file .fn__flex-1 {
-   margin:0px 0px 0px 10px;
+   margin:0px;
    padding-right:5px;
 }
 .layout--float .file-tree {
@@ -1014,4 +1014,68 @@ body.body--win32:has(.fullscreen) .status:hover *{
 #layouts div.layout__center div[data-type="wnd"] .layout-tab-container .protyle .protyle-content .protyle-wysiwyg [data-node-id] span[data-type="file-annotation-ref"]::after,.protyle-wysiwyg [data-node-id] span[data-type~=file-annotation-ref]::after{
    content:"』";
    color:var(--b3-theme-primary);
+}
+
+/*适配随机题头图插件*/
+.b3-dialog__body:has(.pmc-change-loading.pmc-hide) .b3-dialog__content {
+   background-color:#2b2b2bdd !important;
+}
+.pmc-rp-result {
+   background-color:transparent !important;
+}
+.pmc-rp-result-item-person,.pmc-rp-page-item {
+   color:#d7d7d7 !important;
+}
+.pmc-rp-page-cur {
+   background-color:transparent !important;
+   color:var(--b3-theme-primary) !important;
+   border-color:var(--b3-theme-primary) !important;
+}
+.pmc-search-focusable-within {
+   background:transparent !important;
+}
+.pmc-search-focusable-within:focus-within {
+box-shadow:var(--b3-theme-primary) 0 0 0 1px inset, var(--b3-theme-primary-lighter) 0 0 0 2px !important;
+}
+
+.block__icons {
+   color:#c9d1d9b0;
+}
+.sy__outline>.b3-list-item{
+   margin:0px;
+   padding-left:10px;
+   color:#c9d1d9b0 !important;
+}
+.sy__file .fn__flex-1{
+   padding-top:0px !important;
+}
+.b3-list-item__toggle:hover,.b3-list-item__icon:hover  {
+   padding-right:4px;
+   transition:var(--b3-transition);
+}
+.pdf__outer #viewerContainer:not(.pdfPresentationMode) {
+   margin-bottom:20px;
+}
+#tts-content {
+    font-size: 12px;
+}
+.protyle-attr--refcount {
+  font-size:14px;
+  border-radius:30px;
+  padding:4px 8px;
+  opacity:0.8;
+  transform:scale3d(0.8,0.8,0.8);
+}
+/*日历插件适配*/
+.arco-link,.arco-tabs-nav-type-line .arco-tabs-tab-title,.arco-picker-cell:not(.arco-picker-cell-selected).arco-picker-cell-in-view .exist {
+    color:var(--b3-theme-primary) !important;
+}
+.arco-picker-cell-today:after,.arco-tabs-nav-ink,.arco-picker-cell-selected .arco-picker-date-value {
+    background-color:var(--b3-theme-primary);
+}
+.arco-select-view-single:focus-within, .arco-select-view-single.arco-select-view-focus {
+    border-color:var(--b3-theme-primary);
+}
+[data-name="Calendar-heatmap"] .b3-menu__item--current,[data-name="Calendar-heatmap"] #openViewElement{
+   background-color:transparent !important;
 }
