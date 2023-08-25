@@ -69,18 +69,18 @@
     --b3-font-color11: #d8eff3;
     --b3-font-color12: tranparent !important;
     --b3-font-color13: gray;
-    --b3-font-background1: #802723;
-    --b3-font-background2: #884309;
-    --b3-font-background3: #977b00;
-    --b3-font-background4: #5c8500;
-    --b3-font-background5: #265100;
-    --b3-font-background6: var(--b3-theme-primary);
-    --b3-font-background7: #005989;
-    --b3-font-background8: #776190;
-    --b3-font-background9: #ccc1d9;
-    --b3-font-background10: #db9890;
-    --b3-font-background11: #9b9b9b;
-    --b3-font-background12: #8c9fb1;
+    --b3-font-background1: #802723aa;
+    --b3-font-background2: #884309aa;
+    --b3-font-background3: #977b00aa;
+    --b3-font-background4: #5c8500aa;
+    --b3-font-background5: #265100aa;
+    --b3-font-background6: #1ec3b4aa;
+    --b3-font-background7: #005989aa;
+    --b3-font-background8: #776190aa;
+    --b3-font-background9: #ccc1d9aa;
+    --b3-font-background10: #db9890aa;
+    --b3-font-background11: #9b9b9baa;
+    --b3-font-background12: #8c9fb1aa;
     --b3-font-background13: var(--cliff-font);
 
   /* 动画效果 */
@@ -1126,4 +1126,59 @@ background: linear-gradient(
   background-repeat: repeat-x;
   background-position-y: bottom;
   color:inherit;
+}
+.protyle-wysiwyg.protyle-wysiwyg [data-node-id][style*="background-color: var(--b3-font-background1);"] {
+   box-shadow:0 0 0 4px var(--b3-font-background1) inset;
+   background-color:transparent !important;
+}
+.protyle-wysiwyg.protyle-wysiwyg [data-node-id][style*="background-color: var(--b3-font-background2);"] {
+   box-shadow:0 0 0 4px var(--b3-font-background2) inset;
+   background-color:transparent !important;
+}
+.protyle-wysiwyg.protyle-wysiwyg [data-node-id][style*="background-color: var(--b3-font-background3);"] {
+   box-shadow:0 0 0 4px var(--b3-font-background3) inset;
+   background-color:transparent !important;
+}
+.protyle-wysiwyg.protyle-wysiwyg [data-node-id][style*="background-color: var(--b3-font-background4);"] {
+   box-shadow:0 0 0 4px var(--b3-font-background4) inset;
+   background-color:transparent !important;
+}
+.protyle-wysiwyg.protyle-wysiwyg [data-node-id][style*="background-color: var(--b3-font-background5);"] {
+   box-shadow:0 0 0 4px var(--b3-font-background5) inset;
+   background-color:transparent !important;
+}
+.protyle-wysiwyg.protyle-wysiwyg [data-node-id][style*="background-color: var(--b3-font-background6);"] {
+   box-shadow:0 0 0 4px var(--b3-font-background6) inset;
+   background-color:transparent !important;
+}
+.protyle-wysiwyg.protyle-wysiwyg [data-node-id][style*="background-color: var(--b3-font-background7);"] {
+   box-shadow:0 0 0 4px var(--b3-font-background7) inset;
+   background-color:transparent !important;
+}
+.protyle-wysiwyg.protyle-wysiwyg [data-node-id][style*="background-color: var(--b3-font-background8);"] {
+   box-shadow:0 0 0 4px var(--b3-font-background8) inset;
+   background-color:transparent !important;
+}
+.protyle-wysiwyg.protyle-wysiwyg [data-node-id][style*="background-color: var(--b3-font-background9);"] {
+   box-shadow:0 0 0 4px var(--b3-font-background9) inset;
+   background-color:transparent !important;
+}
+.protyle-wysiwyg.protyle-wysiwyg [data-node-id][style*="background-color: var(--b3-font-background10);"] {
+   box-shadow:0 0 0 4px var(--b3-font-background10) inset;
+   background-color:transparent !important;
+}
+.protyle-wysiwyg.protyle-wysiwyg [data-node-id][style*="background-color: var(--b3-font-background11);"] {
+   box-shadow:0 0 0 4px var(--b3-font-background11) inset;
+   background-color:transparent !important;
+}
+.protyle-wysiwyg.protyle-wysiwyg [data-node-id][style*="background-color: var(--b3-font-background12);"] {
+   box-shadow:0 0 0 4px var(--b3-font-background12) inset;
+   background-color:transparent !important;
+}
+.protyle-wysiwyg.protyle-wysiwyg [data-node-id][style*="background-color: var(--b3-font-background13);"] {
+   box-shadow:0 0 0 4px var(--b3-font-background13) inset;
+   background-color:transparent !important;
+}
+.protyle-background__img img,.b3-typography img, .protyle-wysiwyg img {
+   opacity:0.8;
 }
