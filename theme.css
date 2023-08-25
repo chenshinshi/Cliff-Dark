@@ -639,8 +639,9 @@ div[data-type="NodeSuperBlock"] > [data-node-id] {
 .item--focus {
    box-shadow:unset !important;
 }
-.b3-typography table tbody th, .b3-typography table tbody td, .protyle-wysiwyg table tbody th, .protyle-wysiwyg table tbody td,.bq {
+.b3-typography table tbody th, .b3-typography table tbody td, .protyle-wysiwyg table tbody th, .protyle-wysiwyg table tbody td,.bq,.protyle-wysiwyg table thead th {
    font-size:90%;
+   background-color:var(--transparent) !important;
 }
 .b3-card {
     box-shadow:unset;
