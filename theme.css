@@ -1,3 +1,4 @@
+
 :root {
   /* 主色 */
   --b3-theme-primary: #1ec3b4;
@@ -639,9 +640,9 @@ div[data-type="NodeSuperBlock"] > [data-node-id] {
 .item--focus {
    box-shadow:unset !important;
 }
-.b3-typography table tbody th, .b3-typography table tbody td, .protyle-wysiwyg table tbody th, .protyle-wysiwyg table tbody td,.bq,.protyle-wysiwyg table thead th {
+.b3-typography table tbody th, .b3-typography table tbody td, .protyle-wysiwyg table tbody th, .protyle-wysiwyg table tbody td,.bq {
    font-size:90%;
-   background-color:var(--transparent) !important;
+   background-color:rgba(var(--secondary-black), .38) !important;
 }
 .b3-card {
     box-shadow:unset;
@@ -1183,4 +1184,272 @@ background: linear-gradient(
 
 .protyle-background__img img,.b3-typography img, .protyle-wysiwyg img {
    opacity:0.8;
+}
+
+.protyle-wysiwyg div[fold="1"][data-type=NodeHeading]:before {
+   background-color:var(--b3-theme-primary-lighter);
+}
+
+:root {
+    --b3-theme-primary: #1ec3b4 !important;
+    --b3-theme-primary-rgba: 30, 195, 180 !important;
+    --b3-theme-on-surface: #cac8c6 !important;
+    --grey-lighten: 224, 224, 224 !important;
+    --primary-black: 43, 43, 43 !important;
+    --secondary-black: 30, 30, 30 !important;
+    /*底栏背景*/
+    --b3-toolbar-background: rgba(var(--primary-black), .66) !important;
+    /*内容区最大宽度*/
+    --cliff-max-width: 1500px !important;
+    /*代码块背景色*/
+    --custom-transparent: linear-gradient(to bottom, rgba(var(--secondary-black),.85), rgba(var(--secondary-black), .3)) !important;
+}
+
+/*隐藏分割线+间距变小*/
+.layout__resize--lr:after {
+    width: 0px
+}
+
+.layout__resize--lr.layout__resize {
+    padding-left: 0px;
+    padding-right: 0px
+}
+
+/*背景遮罩*/
+.b3-dialog__scrim {
+    background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.618))
+}
+
+/*顶栏*/
+#toolbar.toolbar.fn__flex {
+    top: -16px !important;
+    position: fixed !important;
+    width: 100% !important;
+    z-index: 999 !important;
+    transition: 0.3s !important;
+    opacity: 0 !important;
+    background: rgba(var(--secondary-black), .80) !important;
+    backdrop-filter: blur(15px) !important;
+    box-shadow: var(--b3-dialog-shadow);
+}
+
+#toolbar.toolbar.fn__flex:hover {
+    top: 0px !important;
+    opacity: 1 !important;
+}
+
+/*面包屑*/
+.protyle-breadcrumb__item {
+    color: rgba(var(--grey-lighten), .21) !important;
+}
+
+/*标签页字体*/
+.layout-tab-bar .item__text {
+    color: rgba(var(--grey-lighten)) !important;
+}
+
+/*表格*/
+.b3-typography table, .protyle-wysiwyg table {
+    border: none !important;
+    overflow: unset;
+    border-spacing: 2px;
+    border-collapse: separate;
+}
+
+.b3-typography table td, .b3-typography table th, .protyle-wysiwyg table td, .protyle-wysiwyg table th,
+.b3-typography table tr:nth-child(2n) td, .protyle-wysiwyg table tr:nth-child(2n) td, .protyle-wysiwyg table tbody td {
+    background: rgba(var(--secondary-black), .38);
+}
+
+.protyle-wysiwyg table th {
+    background: rgba(var(--secondary-black), .70) !important;
+    border: none !important;
+}
+
+.protyle-wysiwyg table td {
+    border: none !important;
+}
+
+.protyle-wysiwyg table td:hover, .protyle-wysiwyg table tbody td:hover {
+    /*background: rgba(var(--b3-theme-primary-rgba), .1);*/
+    background: transparent;
+    transition: 0.2s;
+}
+
+.protyle-wysiwyg table tr th:first-child {
+    border-top-left-radius: 12px !important;
+}
+
+.protyle-wysiwyg table tr th:last-child {
+    border-top-right-radius: 12px !important;
+}
+
+.protyle-wysiwyg table tr:last-child td:first-child {
+    border-bottom-left-radius: 12px !important;
+}
+
+.protyle-wysiwyg table tr:last-child td:last-child {
+    border-bottom-right-radius: 12px !important;
+}
+
+/*边栏图标*/
+.dock__item {
+    color: #455A64
+}
+
+.toolbar__item {
+    color: rgba(var(--grey-lighten), .34)
+}
+
+/*内容容器间距*/
+#layouts > .fn__flex-1 {
+    padding: 0px
+}
+
+/*内容背景色*/
+.fn__flex-1.fn__flex [data-type="wnd"]::before {
+    background: rgba(var(--primary-black), .73) !important;
+!important;
+}
+
+/*代码块样式*/
+.code-block {
+    border-radius: 12px !important;
+    border: none !important;
+    background: var(--custom-transparent) !important;
+}
+
+.protyle-wysiwyg [data-node-id] {
+    border-radius: 12px !important;
+}
+.b3-typography blockquote, .b3-typography .bq, .protyle-wysiwyg blockquote, .protyle-wysiwyg .bq {
+   border-top-left-radius:30px !important;
+}
+/*savor底栏*/
+#status {
+    position: fixed !important;
+    background-color: rgba(var(--b3-theme-primary-rgba), 0.2) !important;
+    right: 41px !important;
+    bottom: -4px !important;
+    border-radius: 6px 0 6px 0 !important;
+    height: 26px !important;
+    border: 0 !important;
+    padding: 0 26px 0 0 !important;
+    margin: 0 0 12px 0 !important;
+    z-index: 10 !important;
+}
+
+.status .toolbar__item:not(.toolbar__item--close) {
+    margin: 3px !important;
+    padding: 3px !important;
+    background-color: rgb(0, 0, 0, 0) !important;
+}
+
+.status .toolbar__item svg {
+    padding: 3px 4px !important;
+    color: var(--b3-dockright-color) !important;
+    width: 12px !important;
+}
+
+.body--win32 > .fn__flex-1 {
+    overflow: visible !important;
+}
+
+.status__counter:not(:empty) {
+    border-radius: 5px !important;
+    padding: 0px 0px 0 8px !important;
+    margin: 0px 2px 0px 0px !important;
+    height: 26px !important;
+    line-height: 26px !important;
+}
+
+.status__msg:not(:empty) {
+    animation: statusmsg 5s ease-in-out !important;
+    max-width: 140px !important;
+    padding: 0px 8px !important;
+    border-radius: 5px !important;
+    margin: 0px !important;
+    transition: max-width 300ms, opacity 300ms !important;
+    transition-delay: 2000ms !important;
+    position: relative !important;
+    height: 26px !important;
+    line-height: 26px !important;
+}
+
+.status__msg:not(:empty):before {
+    content: "📢" !important;
+    font-size: 12px !important;
+    padding-right: 6px !important;
+}
+
+.status__msg:not(:empty):hover {
+    max-width: 400px !important;
+    transition: max-width 300ms ease-out !important;
+}
+
+
+.status #statusHelp {
+    position: relative !important;
+}
+
+.status #barDock {
+    position: absolute !important;
+    right: -3px !important;
+    z-index: 8 !important;
+    color: var(--b3-theme-on-background) !important;
+}
+
+.status #statusHelp svg, .status #barDock svg {
+    color: var(--b3-theme-on-background) !important;
+}
+
+.status #barDock:before {
+    right: unset !important;
+    left: 0px !important;
+    transform: rotateY(180deg) !important;
+}
+
+.status #barDock:after {
+    left: unset !important;
+    right: 100% !important;
+}
+
+.status > .fn__flex-1 {
+    position: relative !important;
+    width: 0px !important;
+    right: 0px !important;
+    flex: 0 !important;
+}
+
+
+.status__backgroundtask {
+    margin: 0px 0px 7px 0px !important;
+    padding: 0px 0px 0px 8px !important;
+    border-radius: 5px !important;
+    height: 26px !important;
+    line-height: 26px !important;
+}
+
+
+.body--window #status {
+    right: -22px !important;
+    bottom: -12px !important;
+    border-radius: 6px 0 0 0 !important;
+}
+
+.fn__flex-1:has(#dockRight.fn__none) ~ #status {
+    right: 7px !important;
+}
+
+.status .toolbar__item {
+    height: 26px !important;
+}
+
+#status .toolbar__item span {
+    margin: 3px !important;
+    font-size: 12px !important;
+}
+
+#dockBottom:not(.fn__none) + #status {
+    background-color: transparent !important;
 }
