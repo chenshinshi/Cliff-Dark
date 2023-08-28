@@ -243,6 +243,9 @@ body{
   /*display: none;*/
   background-color: transparent !important;
 }
+.dock__item {
+   background-color:rgba(70,70,70,0.6);
+}
 .block__icons--active {
   background-color: none;
 }
@@ -357,12 +360,12 @@ body{
 }
 
 /*full-screen-mode*/
-.fn__flex-1.protyle.fullscreen {
+/*.fn__flex-1.protyle.fullscreen {
   background-image: url(cliff_bg.jpg) !important;
   background-position: center !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
-}
+}*/
 .fn__flex-1.protyle.fullscreen .protyle-content {
   backdrop-filter: blur(2px);
   background-color: var(--custom-transparent) !important;
@@ -381,7 +384,7 @@ body{
   border-top-left-radius: 0px;
   border-top-left-radius: 0px;
   background-color: rgba(230, 230, 230, 0.133)!important;
-  opacity: 0.6;
+  opacity: 0.6 !important;
 }
 /*selected noteTag*/
 .layout-tab-bar .item--focus {
@@ -391,8 +394,8 @@ body{
 .protyle-breadcrumb {
   background-color: #00000000 !important;
   border-bottom: 1px solid rgba(230, 230, 230, 0.05);
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+  /*border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;*/
 }
 
 
@@ -868,19 +871,20 @@ border: 3px solid var(--b3-theme-surface-lighter);
 }
 .fullscreen {
    z-index:2;
-   background-color:#2b2b2bdd;
-   margin-top:-30px;
+   background-color:#2b2b2bdd !important;
+   /*margin-top:-30px;*/
 }
 .fullscreen .protyle-breadcrumb {
-   margin-top:30px;
+   /*margin-top:30px;*/
    background-color:#2b2b2bdd !important;
 }
-body.body--win32:has(.fullscreen) .status *{
+body.body--win32:has(.fullscreen) #status {
    opacity:0;
+    transition: all 200ms ease-out;
 }
-body.body--win32:has(.fullscreen) .status:hover *{
+body.body--win32:has(.fullscreen) #status:hover {
    opacity:1;
-   transition:var(--b3-transition);
+    transition: all 200ms ease-out;
 }
 .layout__resize {
    z-index:1;
@@ -1246,6 +1250,7 @@ background: linear-gradient(
 /*标签页字体*/
 .layout-tab-bar .item__text {
     color: rgba(var(--grey-lighten)) !important;
+    min-width:2em;
 }
 
 /*表格*/
@@ -1293,10 +1298,6 @@ background: linear-gradient(
 }
 
 /*边栏图标*/
-.dock__item {
-    color: #455A64
-}
-
 .toolbar__item {
     color: rgba(var(--grey-lighten), .34)
 }
@@ -1328,7 +1329,7 @@ background: linear-gradient(
 /*savor底栏*/
 #status {
     position: fixed !important;
-    background-color: rgba(var(--b3-theme-primary-rgba), 0.2) !important;
+    background-color: #204d4b !important;
     right: 41px !important;
     bottom: -4px !important;
     border-radius: 6px 0 6px 0 !important;
@@ -1452,4 +1453,10 @@ background: linear-gradient(
 
 #dockBottom:not(.fn__none) + #status {
     background-color: transparent !important;
+}
+.fullscreen .og-fake-doc-breadcrumb-container{
+   display:none;
+}
+body .protyle-title__input {
+    font-size: 1.8rem;
 }
