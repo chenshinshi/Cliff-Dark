@@ -234,6 +234,7 @@ body{
 /*TopBar*/
 #toolbar.toolbar.fn__flex{
   background-color: #00000000;
+  height:40px;
 }
 .toolbar #drag{
    display: none;
@@ -282,6 +283,7 @@ body{
   background-size: cover;
   background-attachment: fixed;
   backdrop-filter: var(--cliff-blur) !important;
+transform: translateZ(0);
 }
 /*Background of File Tree and Edit Area*/
 .fn__flex-1.fn__flex [data-type="wnd"] {
@@ -306,6 +308,7 @@ body{
   background-size: cover;
   background-attachment: fixed;
   backdrop-filter: var(--cliff-blur) !important;
+transform: translateZ(0);
 }
 /*Edit area*/
 .layout-tab-container {
@@ -369,6 +372,7 @@ body{
 .fn__flex-1.protyle.fullscreen .protyle-content {
   backdrop-filter: blur(2px);
   background-color: var(--custom-transparent) !important;
+transform: translateZ(0);
 }
 .fn__flex-1.protyle.fullscreen .protyle-content .protyle-background {
   margin: 0px;
@@ -429,6 +433,7 @@ body{
   background: #2b2b2baa;
   border-radius: 6px;
   backdrop-filter: blur(20px) !important;
+transform: translateZ(0);
 }
 .block__icons.block__icons--border {
   background-color: #00000000;
@@ -452,6 +457,7 @@ body{
   background: #2b2b2baa;
   border-radius: 6px;
   backdrop-filter: blur(20px) !important;
+transform: translateZ(0);
 }
 /*#commonMenu.b3-menu .b3-menu__item{
   background-color: var(--cliff-main-color-transparent-light)!important;
@@ -488,6 +494,7 @@ body{
   background-attachment: fixed;
   background: var(--cliff-main-color-transparent);
   backdrop-filter: var(--cliff-blur) !important;
+transform: translateZ(0);
   border-radius: 6px;
 }
 .b3-form__icon.search__header{
@@ -665,6 +672,7 @@ div[data-type="NodeSuperBlock"] > [data-node-id] {
   background-size: cover;
   background-attachment: fixed;
   backdrop-filter: var(--cliff-blur) !important;
+transform: translateZ(0);
 }
 .color__square {
     transform: scale(1.3) !important;
@@ -755,6 +763,7 @@ min-height: 200px !important;
 .b3-text-field.b3-text-field--text.fn__block {
    background-color:transparent;
    backdrop-filter:blur(1px);
+transform: translateZ(0);
 }
 
 /*补充标签样式*/
@@ -1225,21 +1234,66 @@ background: linear-gradient(
 }
 
 /*顶栏*/
-#toolbar.toolbar.fn__flex {
+/*.toolbar {
     top: -16px !important;
     position: fixed !important;
     width: 100% !important;
     z-index: 999 !important;
     transition: 0.3s !important;
     opacity: 0 !important;
-    background: rgba(var(--secondary-black), .80) !important;
+    background: rgba(var(--secondary-black), .60) !important;
     backdrop-filter: blur(15px) !important;
+transform: translateZ(0);
     box-shadow: var(--b3-dialog-shadow);
 }
 
-#toolbar.toolbar.fn__flex:hover {
+.toolbar:hover{
     top: 0px !important;
     opacity: 1 !important;
+}*/
+/*隐藏顶栏，来自Savor*/
+.toolbar{
+	height:32px;
+	margin-bottom: -32px;
+	opacity: 0;
+	transition: all 300ms;
+	transform:translateY(-20px);
+	z-index:8;
+	transition-delay: 1000ms;
+    background: #535353 !important;
+    /*backdrop-filter: blur(15px) !important;
+transform: translateZ(0);*/}
+.toolbar:hover{
+	opacity: 1;
+	transform:translateY(0px);
+	transition: all 300ms;
+}
+#dockLeft,#dockRight {
+    -webkit-app-region: drag;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+.dock__item {
+    -webkit-app-region: no-drag;
+}
+.dock__item:hover {
+   background-color:rgba(70,70,70,0.6);
+   color:var(--b3-theme-primary);
+}
+#barWorkspace{
+   background-color:transparent !important;
+}
+#barWorkspace .toolbar__svg{
+   padding-left:4px;
+   padding-right:4px;
+   transform:scale(1.3);
+}
+#barWorkspace .toolbar__svg:hover{
+   color:var(--b3-theme-on-background);
+}
+
+#barWorkspace:hover{
+   color:rgba(var(--grey-lighten), .34) !important;
 }
 
 /*面包屑*/
@@ -1329,7 +1383,7 @@ background: linear-gradient(
 /*savor底栏*/
 #status {
     position: fixed !important;
-    background-color: #204d4b !important;
+    background-color: #535353 !important;
     right: 41px !important;
     bottom: -4px !important;
     border-radius: 6px 0 6px 0 !important;
