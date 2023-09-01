@@ -1,52 +1,25 @@
 
 :root {
-  /* 主色 */
   --b3-theme-primary: #1ec3b4;
   --b3-theme-primary-light: #1ec3b48c;
   --b3-theme-primary-lighter: #1ec3b459;
   --b3-theme-primary-lightest: #1ec3b419;
   --b3-theme-secondary: #f3a92f;
-  /*编辑器主体颜色包括设置菜单等,建议设置为一个不透明的颜色,然后调整其他元素*/
   --b3-theme-background: #2b2b2b;
-  /*众多组件的颜色*/
   --b3-theme-surface: #2b2b2bee;
   --b3-theme-surface-light: rgba(41, 42, 45, 0.86);
   --b3-theme-error: #d23f31;
-
-  /* 文字颜色 */
   --b3-theme-on-primary: #fff;
   --b3-theme-on-secondary: #fff;
   --b3-theme-on-background: #c9d1d9;
   --b3-theme-on-surface: #9aa0a6;
   --b3-theme-on-error: #fff;
-
-  /* 字体 */
-  --b3-font-family: "quote", "Helvetica Neue", "Luxi Sans", "DejaVu Sans",
-    "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
-    "EmojiSymbols";
-  --b3-font-family-code: mononoki, Consolas, "Liberation Mono", Menlo, Courier,
-    monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji",
-    "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
-  --b3-font-family-graph: mononoki;
-
-  /* 线条 */
   --b3-border-color: rgba(230, 230, 230, 0.1);
-
-  /* 滚动条 */
   --b3-scroll-color: rgba(230, 230, 230, 0.2);
-
-  /* 列表 */
   --b3-list-hover: rgba(230, 230, 230, 0.05);
-
-  /* 页签 */
   --b3-tab-background: #292a2d;
   --b3-tab-background-hover: #2e2f31;
-
-  /* 提示 */
   --b3-tooltips-color: rgba(70, 72, 76, 0.86);
-
-  /* 卡片背景 */
   --b3-card-error-color: rgb(250, 179, 174);
   --b3-card-error-background: rgb(154, 77, 73);
   --b3-card-warning-color: rgb(255, 213, 153);
@@ -55,8 +28,6 @@
   --b3-card-info-background: rgb(82, 116, 145);
   --b3-card-success-color: rgb(183, 223, 185);
   --b3-card-success-background: rgb(71, 116, 71);
-
-  /* 自定义文字 */
     --b3-font-color1: #e84c22;
     --b3-font-color2: #ed7d31;
     --b3-font-color3: #ffc000;
@@ -83,23 +54,15 @@
     --b3-font-background11: #9b9b9baa;
     --b3-font-background12: #8c9fb1aa;
     --b3-font-background13: var(--cliff-font);
-
-  /* 动画效果 */
   --b3-transition: all 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms;
   --b3-width-transition: width 0.15s cubic-bezier(0, 0, 0.2, 1) 0ms;
-
-  /* 阴影 */
   --b3-point-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
     0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
   --b3-dialog-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.4);
-
-  /* diff */
   --b3-diff-add: #133a1c;
   --b3-diff-add-surface: #28853e;
   --b3-diff-del: #440c10;
   --b3-diff-del-surface: #b1202d;
-
-  /* 图表颜色 */
   --b3-graph-p-point: #076f7e;
   --b3-graph-heading-point: #9876aa;
   --b3-graph-math-point: #80ffa5;
@@ -121,16 +84,10 @@
   --b3-graph-asset-line: #037457;
   --b3-graph-hl-point: #f3a92f;
   --b3-graph-hl-line: #4285f4;
-
-  /* 编辑器搜索颜色 */
   --b3-protyle-search-background: #32593c;
   --b3-protyle-search-border-color: #486a51;
   --b3-protyle-search-current-background: #204282;
-
-  /* 代码片段背景 */
   --b3-protyle-code-background: rgba(240, 246, 252, 0.15);
-
-  /* 所见即所得行内元素颜色 */
   --b3-protyle-inline-strong-color: #e8eaed;
   --b3-protyle-inline-em-color: #e8eaed;
   --b3-protyle-inline-s-color: #e8eaed;
@@ -139,9 +96,6 @@
   --b3-protyle-inline-mark-color: #e8eaed;
   --b3-protyle-inline-tag-color: #9aa0a6;
   --b3-protyle-inline-blockref-color: #9876aa;
-
-
-      /* PDF */
       --b3-pdf-selection: #779170;
       --b3-pdf-sidebar-width: 200px;
       --b3-pdf-offset: 0;
@@ -152,65 +106,39 @@
       --b3-pdf-background5: #8B864E;
       --b3-pdf-background6: #681933;
       --b3-pdf-background7: #481761;
-
-
-
-
-
-  /*0层透明度*/
   --transparent: #2b2b2baa;
   --custom-transparent: #2b2b2bcc;
-  /*1层透明度*/
   --custom-transparent-deep: #1b1b1bdd;
-  /*2层透明度*/
   --custom-transparent-deeper: #1f1f1fdd;
-  /*不透明的组件*/
   --cliff-main-background-color: #2b2b2b;
   --cliff-main-background-color-deeper: #1f1f1f;
-
-
-  /*二级文字颜色*/
   --custom-font-lighter: #c9d1d98c;
-
-
-
-
-  /*element color*/
   --cliff-main-color:#2b2b2b;
   --cliff-main-color-transparent:#2b2b2bee;
   --cliff-main-color-transparent-light: #2b2b2baa;
   --cliff-main-clolr-deep:#1f1f1f;
-
   --cliff-bright-color:#f3a92f;
-
   --cliff-blur:blur(15px);
   --cliff-max-width: 1100px;
-
   --cliff-side-bar-hover:var(--morandi-air-green);
-
   --cliff-font:#F2F1E8;
   --cliff-font-strong:#BD387D;
   --cliff-font-em:#C88F0D;
-
   --cliff-head:#008EC6;
   --cliff-prompt:var(--morandi-sky);
-
   --cliff-link:var(--morandi-sea-emerald);
   --cliff-link-active:var(--morandi-statement-blue);
   --cliff-pdf-file:var(--morandi-hope);
   --cliff-pdf-file-active:var(--morandi-dusty-green);
-
   --cliff-code-block:#283532;
   --cliff-code-block-content:#283532;
   --cliff-quote-block:#333739;
   --cliff-quote-content:#008EC6;
   --cliff-anki-card:var(--morandi-clover-land);
   --cliff-anki-card-front:var(--morandi-clover-land);
-
   --cliff-delete-line:var(--morandi-shade);
   --cliff-tag:var(--morandi-caravan);
   --cliff-tag-background:#3F3D2E;
-
     --b3-tooltips-color:var(--b3-theme-on-background);
     --b3-tooltips-background:#2b2b2bdd;
     --b3-transition: all .15s cubic-bezier(0, 0, .2, 1) 0ms;
@@ -234,7 +162,7 @@ body{
 /*TopBar*/
 #toolbar.toolbar.fn__flex{
   background-color: #00000000;
-  height:40px;
+  height:32px;
 }
 .toolbar #drag{
    display: none;
@@ -264,7 +192,7 @@ body{
 .graph__panel {
   z-index: 2;
 }
-.fn__flex-1.graph.file-tree.sy__graph.fullscreen{
+/*.fn__flex-1.graph.file-tree.sy__graph.fullscreen{
   background-image: url(cliff_bg.jpg) !important;
   background-position: center !important;
   background-size: cover !important;
@@ -284,7 +212,7 @@ body{
   background-attachment: fixed;
   backdrop-filter: var(--cliff-blur) !important;
 transform: translateZ(0);
-}
+}*/
 /*Background of File Tree and Edit Area*/
 .fn__flex-1.fn__flex [data-type="wnd"] {
   min-height: 90% !important;
@@ -407,7 +335,12 @@ transform: translateZ(0);
 
 /*ref block card*/
 .block__popover {
-  background-color: #00000000;
+   /*background-color:var(--b3-theme-surface);*/
+  background: linear-gradient(to bottom, #474747db, #272727e6);
+  border:none;
+}
+.block__icons--menu {
+   background-color:transparent;
 }
 .block__popover.block__popover--move.block__popover--open {
   /* min-height: 90% !important; */
@@ -419,7 +352,7 @@ transform: translateZ(0);
   border-radius: 6px;
   box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.5);
 }
-.block__popover.block__popover--move.block__popover--open::before {
+/*.block__popover.block__popover--move.block__popover--open::before {
   content: "";
   position: absolute !important;
   top: 0;
@@ -434,7 +367,8 @@ transform: translateZ(0);
   border-radius: 6px;
   backdrop-filter: blur(20px) !important;
 transform: translateZ(0);
-}
+   border-radius:12px;
+}*/
 .block__icons.block__icons--border {
   background-color: #00000000;
 }
@@ -472,7 +406,7 @@ transform: translateZ(0);
   margin: 20px 0px;
 }
 /*set Menu*/
-.b3-dialog__container {
+/*.b3-dialog__container {
   z-index: 2;
   background-image: url(cliff_bg.jpg);
   border-radius: 6px;
@@ -480,8 +414,12 @@ transform: translateZ(0);
   background-size: cover;
   background-repeat: no-repeat;
   border:1px;
+}*/
+.config__panel>.b3-tab-bar{
+   background-color:#2d2d2d;
+   border-radius:12px 0 0px 12px;
 }
-.b3-dialog__container::before {
+/*.b3-dialog__container::before {
   content: "";
   position: absolute !important;
   top: 0;
@@ -496,7 +434,7 @@ transform: translateZ(0);
   backdrop-filter: var(--cliff-blur) !important;
 transform: translateZ(0);
   border-radius: 6px;
-}
+}*/
 .b3-form__icon.search__header{
   background-color: #00000000!important;
 }
@@ -659,7 +597,7 @@ div[data-type="NodeSuperBlock"] > [data-node-id] {
     border:1px solid var(--b3-border-color);
 }
 
-.block__popover .block__content::before{
+/*.block__popover .block__content::before{
   content: "";
   position: absolute;
   top: 0;
@@ -673,7 +611,8 @@ div[data-type="NodeSuperBlock"] > [data-node-id] {
   background-attachment: fixed;
   backdrop-filter: var(--cliff-blur) !important;
 transform: translateZ(0);
-}
+   border-radius:12px;
+}*/
 .color__square {
     transform: scale(1.3) !important;
     margin: 2px 4px !important;
@@ -872,9 +811,6 @@ border: 3px solid var(--b3-theme-surface-lighter);
 .protyle-wysiwyg div.table[data-node-id] table {
     width: auto;
 }
-.table table {
-   border:2px solid var(--b3-theme-surface-lighter);
-}
 .protyle-wysiwyg [data-node-id][custom-riff-decks] {
     animation: unset !important;
 }
@@ -1020,9 +956,9 @@ body.body--win32:has(.fullscreen) #status:hover {
 }
 #layouts div.fn__flex-column div[data-type="wnd"] div.layout-tab-container .sy__file ul.b3-list li.b3-list-item[data-type="toggle"]{margin-left:10px !important;border-radius:6px;opacity:0}
 #layouts div.fn__flex-column div[data-type="wnd"] div.layout-tab-container .sy__file ul.b3-list li.b3-list-item[data-type="toggle"]:hover {opacity:1}
-.block__popover {
+/*.block__popover {
    border-radius:0px
-}
+}*/
 .protyle-wysiwyg [data-node-id].render-node[data-type=NodeBlockQueryEmbed] {
     background-color: transparent;
     border: 3px solid transparent;
@@ -1329,11 +1265,6 @@ transform: translateZ(0);*/}
     border: none !important;
 }
 
-.protyle-wysiwyg table td:hover, .protyle-wysiwyg table tbody td:hover {
-    /*background: rgba(var(--b3-theme-primary-rgba), .1);*/
-    background: transparent;
-    transition: 0.2s;
-}
 
 .protyle-wysiwyg table tr th:first-child {
     border-top-left-radius: 12px !important;
