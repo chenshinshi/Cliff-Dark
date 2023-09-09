@@ -955,9 +955,7 @@ body.body--win32:has(.fullscreen) #status:hover {
    margin:0px;
    padding-right:5px;
 }
-.layout--float .file-tree {
-   margin-right:5px;
-}
+
 .fn__flex-1.fn__flex-column.file-tree.sy__file .b3-list-item {
    margin-left:0px !important;
 }
@@ -1212,10 +1210,11 @@ transform: translateZ(0);*/}
 	transition: all 300ms;
 }
 #dockLeft,#dockRight {
-    -webkit-app-region: drag;
+    /*-webkit-app-region: drag;*/
     padding-top:30px;
     padding-bottom:30px;
 }
+.status__counter{-webkit-app-region:drag;}
 .dock__item {
     -webkit-app-region: no-drag;
 }
@@ -1470,3 +1469,5 @@ body .protyle-title__input {
 span[data-type="sup inline-memo"] {color:var(--b3-theme-primary)!important;}
 span[data-type="sup inline-memo"]:after,span[data-type="sub inline-memo"]:after {display:none;}
 span[data-type="sub inline-memo"] {color:var(--b3-theme-primary)!important;}
+.b3-dialog__close,.b3-dialog__close:hover{opacity:0;cursor:default}
+.config-bazaar__readme .item__side{border-right: 2px dashed var(--b3-theme-surface-lighter);}
