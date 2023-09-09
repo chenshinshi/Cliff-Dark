@@ -697,7 +697,8 @@ transform: translateZ(0);
 }
 /*备注框文字*/
 .protyle-util  .b3-text-field.b3-text-field--text.fn__block {
-   font-size: 130%;
+    font-size: 1.1rem !important;
+    line-height: 1.5em !important;
 min-height: 200px !important;
    line-height:25px;
 }
@@ -1255,8 +1256,8 @@ transform: translateZ(0);*/}
     overflow: unset;
     border-spacing: 2px;
     border-collapse: separate;
+    border-radius:12px;
 }
-
 .b3-typography table td, .b3-typography table th, .protyle-wysiwyg table td, .protyle-wysiwyg table th,
 .b3-typography table tr:nth-child(2n) td, .protyle-wysiwyg table tr:nth-child(2n) td, .protyle-wysiwyg table tbody td {
     background: rgba(var(--secondary-black), .38);
@@ -1272,11 +1273,11 @@ transform: translateZ(0);*/}
 }
 
 
-.protyle-wysiwyg table tr th:first-child {
+.protyle-wysiwyg table th:first-child {
     border-top-left-radius: 12px !important;
 }
 
-.protyle-wysiwyg table tr th:last-child {
+.protyle-wysiwyg table th:last-child {
     border-top-right-radius: 12px !important;
 }
 
@@ -1456,3 +1457,16 @@ body .protyle-title__input {
    overflow:visible !important;
 -webkit-line-clamp: unset;
 }
+.protyle-wysiwyg [data-node-id] span[data-type~=block-ref][style*=--memo]:before{display:none}
+.protyle-wysiwyg [data-node-id] span[data-type~=block-ref][style*=--memo]{border-bottom:none !important;}
+
+.config-account__cover{background-image:none !important}
+.protyle-wysiwyg span[data-type~=inline-memo]:after {
+    content: "注";
+    vertical-align: top;
+    font-size: .5em;
+    color:var(--b3-theme-primary);
+}
+span[data-type="sup inline-memo"] {color:var(--b3-theme-primary)!important;}
+span[data-type="sup inline-memo"]:after,span[data-type="sub inline-memo"]:after {display:none;}
+span[data-type="sub inline-memo"] {color:var(--b3-theme-primary)!important;}
