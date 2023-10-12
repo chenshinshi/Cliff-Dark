@@ -1471,3 +1471,15 @@ span[data-type="sup inline-memo"]:after,span[data-type="sub inline-memo"]:after 
 span[data-type="sub inline-memo"] {color:var(--b3-theme-primary)!important;}
 .b3-dialog__close,.b3-dialog__close:hover{opacity:0;cursor:default}
 .config-bazaar__readme .item__side{border-right: 2px dashed var(--b3-theme-surface-lighter);}
+
+.protyle-wysiwyg [data-node-id][custom-riff-decks]:not([data-type="NodeHeading"]) {box-shadow:0px 1px 0px 0px #cac8c699,0px -1px 0px 0px #cac8c699;transition:all 300ms}
+.protyle-wysiwyg [data-node-id][custom-riff-decks][data-type="NodeHeading"]{box-shadow:0px -1px 0px 0px #cac8c699}
+.protyle-wysiwyg [data-node-id][data-type="NodeSuperBlock"]{box-shadow:0px 0px 0px 1px #cac8c699}
+.protyle-wysiwyg [data-node-id][data-type="NodeSuperBlock"] [data-node-id][data-type="NodeSuperBlock"]{box-shadow:unset}
+.b3-typography audio, .protyle-wysiwyg audio{mix-blend-mode:soft-light}
+.card__block--hidemark span[data-type~="mark"]{color:transparent !important}
+.card__block--hidemark span[data-type~="mark"]:hover{background-color:transparent !important;color:var(--b3-theme-on-background) !important}
+.protyle-wysiwyg [data-node-id] span[data-type="a"]:not(:empty):not([data-href*="siyuan://"]):not([data-href*="assets/"]){background-color:rgba(240, 246, 252, 0.15);border-radius:100px;padding:4px 10px 3px 10px;font-size:90%;border-bottom:none}
+.protyle-wysiwyg [data-node-id] span[data-type="a"]:not(:empty):not([data-href*="siyuan://"]):not([data-href*="assets/"]):hover{background-color:#535353;}
+.b3-dialog__action{border-top:none}
+.card__main .protyle-wysiwyg [data-node-id][custom-riff-decks], [data-key="viewCards"] .protyle-wysiwyg [data-node-id][custom-riff-decks] {box-shadow:unset;}
