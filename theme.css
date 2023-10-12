@@ -579,7 +579,7 @@ div[data-type="NodeSuperBlock"] > [data-node-id] {
 }
 
 .b3-menu__items {
-   overflow:hidden;
+   overflow-x:hidden;
 }
 #commonMenu.b3-menu .b3-menu__item {
    background-color:transparent;
@@ -1483,3 +1483,8 @@ span[data-type="sub inline-memo"] {color:var(--b3-theme-primary)!important;}
 .protyle-wysiwyg [data-node-id] span[data-type="a"]:not(:empty):not([data-href*="siyuan://"]):not([data-href*="assets/"]):hover{background-color:#535353;}
 .b3-dialog__action{border-top:none}
 .card__main .protyle-wysiwyg [data-node-id][custom-riff-decks], [data-key="viewCards"] .protyle-wysiwyg [data-node-id][custom-riff-decks] {box-shadow:unset;}
+.av__row.av__row--header .av__cell{border-right:none}
+.av__row.av__row--header .av__cell .av__celltext,.av__row.av__row--header .av__cell .av__cellicon{opacity:0.6}
+.av__row.av__row--header,.av__row--footer{background-color:transparent}
+.av__title{font-weight:600}
+.av__celltext .b3-chip{border-radius:4px;margin:0px 4px;padding:1px 6px;background-color:transparent !important;box-shadow:0px 0px 1px 1px;}
