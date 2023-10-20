@@ -701,6 +701,7 @@ transform: translateZ(0);
     line-height: 1.5em !important;
 min-height: 200px !important;
    line-height:25px;
+font-family:var(--b3-font-family) !important;
 }
 
 .protyle-util {
@@ -1503,3 +1504,22 @@ span[data-type="sub inline-memo"] {color:var(--b3-theme-primary)!important;}
 .b3-text-field.fn__block[data-name="alias"]:focus,.b3-text-field.fn__block[data-name="name"]:focus,.b3-text-field.fn__block[data-name="bookmark"]:focus{box-shadow:inset 0px -1px 0px 0px var(--b3-theme-primary),0px 3px 0px 0px var(--b3-theme-primary-lightest)}
 
 .av__panel .b3-menu{background-color:#222222aa;backdrop-filter:blur(15px)}
+
+.sy__outline .b3-list-item__text.ariaLabel{box-shadow:inset 0 -1px 0px 0px var(--b3-border-color)}
+.sy__outline .b3-list--background .b3-list-item{margin-left:0px}
+
+.b3-typography .h2:after, .b3-typography h2:after, .protyle-wysiwyg .h2:after, .protyle-wysiwyg h2::after{content:"";background-color:var(--b3-theme-primary-lighter);width:100%;display:block;height:2px}
+.b3-typography .h1:after, .b3-typography h1:after, .protyle-wysiwyg .h1:after, .protyle-wysiwyg h1::after{content:"";background-color:var(--b3-theme-primary-lighter);width:100%;display:block;height:5px}
+.b3-typography .h4, .b3-typography h4, .protyle-wysiwyg .h4, .protyle-wysiwyg h4{width:fit-content;background-color:var(--b3-theme-primary-lightest);background-image:linear-gradient(to right,transparent,var(--b3-theme-primary-lighter));padding:1px 10px!important;border-radius:0px !important;text-shadow:1px 1px #122c2a;color:#47afa7}
+.b3-typography .h6, .b3-typography h6, .protyle-wysiwyg .h6, .protyle-wysiwyg h6{width:fit-content;border:1px solid;padding:1px 10px!important;border-radius:0px !important;
+font-size:.9em}
+.b3-typography .h5, .b3-typography h5, .protyle-wysiwyg .h5, .protyle-wysiwyg h5{text-decoration:underline;text-underline-offset:5px;color:var(--b3-theme-primary)}
+.b3-typography .h3, .b3-typography h3, .protyle-wysiwyg .h3, .protyle-wysiwyg h3{box-shadow:-4px 0px 1px 1px var(--b3-theme-primary-lighter);border-radius:0px!important;}
+
+.sy__outline .b3-list--background .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom){background-color:inherit}
+.sy__outline .b3-list--background .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom) .b3-list-item__text.ariaLabel{box-shadow:inset 0 -1px 0px 0px var(--b3-theme-primary-light);transition:var(--b3-transition)}
+.sy__outline .b3-list--background .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom):hover{background-color:var(--b3-list-hover)}
+
+
+.search__header .b3-text-field--text,#criteria{background-color:transparent !important}
+[data-type*="inline-memo block-ref"]::after{content:"注" !important}
