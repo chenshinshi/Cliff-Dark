@@ -1,0 +1,159 @@
+/**********************备注框样式**********************/
+.protyle-util  .b3-text-field.b3-text-field--text.fn__block {
+    font-size: 1.1rem !important;
+    line-height: 1.5em !important;
+min-height: 200px !important;
+   line-height:25px;
+font-family:var(--b3-font-family) !important;
+}
+.protyle-util {
+   background-color:#2b2b2bdd;
+}
+.b3-text-field.b3-text-field--text.fn__block {
+   background-color:transparent;
+   backdrop-filter:blur(1px);
+transform: translateZ(0);
+}
+/***************************tooltip样式*************************/
+.tooltip.tooltip--memo{
+    font-size: 1.1rem !important;
+    line-height: 1.3em;
+    box-sizing: border-box;
+    max-width:660px;
+    padding: 5px 10px;
+}
+/***********************行内样式交互*************************/
+span[data-type~="inline-memo"]:hover,
+span[data-type~="file-annotation-ref"]:hover, 
+.b3-typography a:hover, 
+span[data-type~="a"]:hover,
+span[data-type~=block-ref]:hover{
+    background-color: var(--b3-theme-primary-lightest);
+    transition: var(--b3-transition);
+}
+/***********************行内备注样式***********************/
+.protyle-wysiwyg span[data-type~=inline-memo]{
+    border-bottom: 0px solid !important;
+    background-color:transparent;
+background: linear-gradient(
+    to right,
+    transparent 0%,
+    transparent 50%,
+    var(--b3-theme-primary) 50%,
+    var(--b3-theme-primary) 100%
+  );
+  background-size: 7px 1px;
+  background-repeat: repeat-x;
+  background-position-y: bottom;
+    cursor: pointer;
+}
+.protyle-wysiwyg [data-node-id] span[data-type~=block-ref], .protyle-wysiwyg [data-node-id] span[data-type~=file-annotation-ref] {
+  color: var(--cliff-font);
+   opacity:1;
+background: linear-gradient(
+    to right,
+    transparent 0%,
+    transparent 50%,
+    var(--b3-theme-primary) 50%,
+    var(--b3-theme-primary) 100%
+  );
+  background-size: 7px 1px;
+  background-repeat: repeat-x;
+  background-position-y: bottom;
+  color:inherit;
+}
+.protyle-wysiwyg [data-node-id] span[data-type~=file-annotation-ref] {
+   color:inherit;
+   opacity:1;
+}
+#layouts div.layout__center div[data-type="wnd"] .layout-tab-container .protyle .protyle-content .protyle-wysiwyg [data-node-id] span[data-type="file-annotation-ref"]::before,.protyle-wysiwyg [data-node-id] span[data-type~=file-annotation-ref]::before{
+   content:"『";
+   color:var(--b3-theme-primary);
+}
+#layouts div.layout__center div[data-type="wnd"] .layout-tab-container .protyle .protyle-content .protyle-wysiwyg [data-node-id] span[data-type="file-annotation-ref"]::after,.protyle-wysiwyg [data-node-id] span[data-type~=file-annotation-ref]::after{
+   content:"』";
+   color:var(--b3-theme-primary);
+}
+.protyle-wysiwyg span[data-type~=inline-memo][data-type~=sub],
+.protyle-wysiwyg span[data-type~=inline-memo][data-type~=sup],
+.protyle-wysiwyg span[data-type~=block-ref][data-type~=sub],
+.protyle-wysiwyg span[data-type~=block-ref][data-type~=sup]
+{background:none}
+
+span[data-type~=inline-memo]:not([data-type~="sup"]):not([data-type~="sub"]):after {
+    content: "注";
+    vertical-align: top;
+    font-size: .5em;
+    color:var(--b3-theme-primary);
+}
+span[data-type~="sup"][data-type~="inline-memo"],
+span[data-type~="sub"][data-type~="inline-memo"]
+{color:var(--b3-theme-primary)!important;}
+
+[data-node-id][data-type=block-ref],
+[data-id][data-type=block-ref]::before,
+span[data-type~=block-ref]::before, 
+span[data-type~=file-annotation-ref]::before{
+  content: "[[";
+  color: #1ec3b4c7 !important;
+}
+[data-node-id][data-type=block-ref],
+[data-id][data-type=block-ref]::after,
+span[data-type~=block-ref]::after, 
+span[data-type~=file-annotation-ref]::after{
+  content: "]]";
+  color: #1ec3b4c7 !important;
+}
+.og-hierachy-navigate-doc-container span.docLinksWrapper [data-type=block-ref]::before,.og-hierachy-navigate-doc-container span.docLinksWrapper [data-type=block-ref]::after {
+   display:none;
+}
+/***************************link**************************/
+.protyle-wysiwyg [data-node-id] span[data-type="a"],.protyle-wysiwyg [data-node-id] span[data-type="a"]:hover {
+  color: inherit;
+  border-bottom: thin solid #1ec3b4c7;
+}
+.protyle-wysiwyg [data-node-id] span[data-type="a"]:not(:empty):not([data-href*="siyuan://"]):not([data-href*="assets/"]){background-color:rgba(240, 246, 252, 0.15);border-radius:100px;padding:4px 10px 3px 10px;font-size:90%;border-bottom:none}
+.protyle-wysiwyg [data-node-id] span[data-type="a"]:not(:empty):not([data-href*="siyuan://"]):not([data-href*="assets/"]):hover{background-color:#535353;}
+/***************************mark********************/
+.b3-typography mark, .b3-typography span[data-type~=mark], .protyle-wysiwyg mark, .protyle-wysiwyg span[data-type~=mark] {
+background-color: var(--b3-theme-primary-lighter) !important;
+}
+.card__block--hidemark span[data-type~="mark"]{color:transparent !important}
+.card__block--hidemark span[data-type~="mark"]:hover{background-color:transparent !important;color:var(--b3-theme-on-background) !important}
+/**************************tags**********************/
+#layouts div.layout__center div[data-type="wnd"] .layout-tab-container .protyle .protyle-content .protyle-wysiwyg [data-node-id] span[data-type="tag"],.protyle-wysiwyg [data-node-id] span[data-type~=tag] {
+    border-bottom: none;
+    background-color: transparent;
+    transition: var(--b3-transition);
+background: linear-gradient(
+    to right,
+    transparent 0%,
+    transparent 50%,
+    var(--b3-theme-primary) 50%,
+    var(--b3-theme-primary) 100%
+  );
+  background-size: 7px 1px;
+  background-repeat: repeat-x;
+  background-position-y: bottom;
+    padding: 1px 7px;
+    border-radius: 20px;
+    color: inherit;
+    margin: 0 4px;
+  font-size: 95%;
+}
+#layouts div.layout__center div[data-type="wnd"] .layout-tab-container .protyle .protyle-content .protyle-wysiwyg [data-node-id] span[data-type="tag"]::before,.protyle-wysiwyg [data-node-id] span[data-type~=tag]::before {
+   content:"#";
+   color:var(--b3-theme-primary);
+}
+#layouts div.layout__center div[data-type="wnd"] .layout-tab-container .protyle .protyle-content .protyle-wysiwyg [data-node-id] span[data-type="tag"]::after,.protyle-wysiwyg [data-node-id] span[data-type~=tag]::after {
+   content:"#";
+   color:var(--b3-theme-primary);
+}
+/****************************text**************************/
+.b3-typography s, .b3-typography span[data-type~=s], .protyle-wysiwyg s, .protyle-wysiwyg span[data-type~=s] {
+   color:inherit;
+   opacity:0.6;
+}
+.b3-typography strong, .b3-typography span[data-type~=strong], .protyle-wysiwyg strong, .protyle-wysiwyg span[data-type~=strong] {
+   color:inherit;
+}

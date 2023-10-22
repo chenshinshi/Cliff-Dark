@@ -1,0 +1,68 @@
+/*TopBar*/
+#toolbar.toolbar.fn__flex{
+  background-color: #00000000;
+  height:32px;
+}
+.toolbar #drag{
+   display: none;
+}
+/*LeftBar*/
+#dockLeft {
+  background-color: transparent !important;
+}
+.dock__item {
+   background-color:rgba(70,70,70,0.6);
+}
+/*RigtBar*/
+#dockRight {
+  background-color: transparent !important;
+}
+
+/*隐藏顶栏，来自Savor*/
+.toolbar{
+	height:32px;
+	margin-bottom: -32px;
+	opacity: 0;
+	transition: all 300ms;
+	transform:translateY(-20px);
+	z-index:8;
+	transition-delay: 1000ms;
+    background: #535353 !important;
+    /*backdrop-filter: blur(15px) !important;
+transform: translateZ(0);*/}
+.toolbar:hover{
+	opacity: 1;
+	transform:translateY(0px);
+	transition: all 300ms;
+}
+#dockLeft,#dockRight {
+    /*-webkit-app-region: drag;*/
+    padding-top:30px;
+    padding-bottom:30px;
+}
+.dock__item {
+    -webkit-app-region: no-drag;
+}
+.dock__item:hover {
+   background-color:rgba(70,70,70,0.6);
+   color:var(--b3-theme-primary);
+}
+#barWorkspace{
+   background-color:transparent !important;
+}
+#barWorkspace .toolbar__svg{
+   padding-left:4px;
+   padding-right:4px;
+   transform:scale(1.3);
+}
+#barWorkspace .toolbar__svg:hover{
+   color:var(--b3-theme-on-background);
+}
+
+#barWorkspace:hover{
+   color:rgba(var(--grey-lighten), .34) !important;
+}
+
+.toolbar__item {
+    color: rgba(var(--grey-lighten), .34)
+}

@@ -1,0 +1,28 @@
+.fn__flex-1.protyle.fullscreen .protyle-content {
+  backdrop-filter: blur(2px);
+  background-color: var(--custom-transparent) !important;
+transform: translateZ(0);
+}
+.fn__flex-1.protyle.fullscreen .protyle-content .protyle-background {
+  margin: 0px;
+  min-height: 30vh;
+}
+
+.fullscreen {
+   z-index:2;
+   background-color:#2b2b2bdd !important;
+}
+.fullscreen .protyle-breadcrumb {
+   background-color:#2b2b2bdd !important;
+}
+body.body--win32:has(.fullscreen) #status {
+   opacity:0;
+    transition: all 200ms ease-out;
+}
+body.body--win32:has(.fullscreen) #status:hover {
+   opacity:1;
+    transition: all 200ms ease-out;
+}
+.fullscreen .og-fake-doc-breadcrumb-container{
+   display:none;
+}

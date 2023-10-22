@@ -1,0 +1,16 @@
+/*标签页字体*/
+.layout-tab-bar .item__text {
+    color: rgba(var(--grey-lighten)) !important;
+    min-width:2em;
+}
+
+.layout__wnd--active .layout-tab-bar .item--focus:after,.layout-tab-bar .item--full.item--focus:after {
+    background-color:#1ec3b4;
+    display:none;
+}
+.layout-tab-bar .item--focus:after {
+   display:none;
+}
+.item--focus {
+   box-shadow:unset !important;
+}

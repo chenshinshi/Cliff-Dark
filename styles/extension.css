@@ -1,0 +1,50 @@
+/*适配随机题头图插件*/
+.b3-dialog__body:has(.pmc-change-loading.pmc-hide) .b3-dialog__content {
+   background-color:#2b2b2bdd !important;
+}
+.pmc-rp-result {
+   background-color:transparent !important;
+}
+.pmc-rp-result-item-person,.pmc-rp-page-item {
+   color:#d7d7d7 !important;
+}
+.pmc-rp-page-cur {
+   background-color:transparent !important;
+   color:var(--b3-theme-primary) !important;
+   border-color:var(--b3-theme-primary) !important;
+}
+.pmc-search-focusable-within {
+   background:transparent !important;
+}
+.pmc-search-focusable-within:focus-within {
+box-shadow:var(--b3-theme-primary) 0 0 0 1px inset, var(--b3-theme-primary-lighter) 0 0 0 2px !important;
+}
+
+#tts-content {
+    font-size: 12px;
+}
+/*日历插件适配*/
+.arco-link,.arco-tabs-nav-type-line .arco-tabs-tab-title,.arco-picker-cell:not(.arco-picker-cell-selected).arco-picker-cell-in-view .exist {
+    color:var(--b3-theme-primary) !important;
+}
+.arco-picker-cell-today:after,.arco-tabs-nav-ink,.arco-picker-cell-selected .arco-picker-date-value {
+    background-color:var(--b3-theme-primary);
+}
+.arco-select-view-single:focus-within, .arco-select-view-single.arco-select-view-focus {
+    border-color:var(--b3-theme-primary);
+}
+[data-name="Calendar-heatmap"] .b3-menu__item--current,[data-name="Calendar-heatmap"] #openViewElement{
+   background-color:transparent !important;
+}
+
+/*breadcrumb*/
+.protyle-breadcrumb {
+  background-color: #00000000 !important;
+  border-bottom: 1px solid rgba(230, 230, 230, 0.05);
+  /*border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;*/
+}
+.protyle-breadcrumb__item {
+    color: rgba(var(--grey-lighten), .21) !important;
+}
+

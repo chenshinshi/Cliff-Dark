@@ -1,0 +1,12 @@
+.pdf__rect>div {
+   border-radius:0px !important;
+}
+.pdf__outer.pdf__outer--dark .pdf__rect [style*="background"]{background-color:transparent !important;border-top:none !important;border-left:none !important;border-right:none !important}
+
+.pdf__outer #viewerContainer:not(.pdfPresentationMode) {
+   margin-bottom:20px;
+}
+.textLayer .highlight.selected {
+   background-color: transparent;
+   border:2px solid var(--b3-theme-primary);
+}

@@ -1,0 +1,125 @@
+.status__counter{-webkit-app-region:drag;}
+/*savor底栏*/
+#status {
+    position: fixed !important;
+    background-color: #535353 !important;
+    right: 41px !important;
+    bottom: -4px !important;
+    border-radius: 6px 0 6px 0 !important;
+    height: 26px !important;
+    border: 0 !important;
+    padding: 0 26px 0 0 !important;
+    margin: 0 0 12px 0 !important;
+    z-index: 10 !important;
+}
+
+.status .toolbar__item:not(.toolbar__item--close) {
+    margin: 3px !important;
+    padding: 3px !important;
+    background-color: rgb(0, 0, 0, 0) !important;
+}
+
+.status .toolbar__item svg {
+    padding: 3px 4px !important;
+    color: var(--b3-dockright-color) !important;
+    width: 12px !important;
+}
+
+.status__counter:not(:empty) {
+    border-radius: 5px !important;
+    padding: 0px 0px 0 8px !important;
+    margin: 0px 2px 0px 0px !important;
+    height: 26px !important;
+    line-height: 26px !important;
+}
+
+.status__msg:not(:empty) {
+    animation: statusmsg 5s ease-in-out !important;
+    max-width: 140px !important;
+    padding: 0px 8px !important;
+    border-radius: 5px !important;
+    margin: 0px !important;
+    transition: max-width 300ms, opacity 300ms !important;
+    transition-delay: 2000ms !important;
+    position: relative !important;
+    height: 26px !important;
+    line-height: 26px !important;
+}
+
+.status__msg:not(:empty):before {
+    content: "📢" !important;
+    font-size: 12px !important;
+    padding-right: 6px !important;
+}
+
+.status__msg:not(:empty):hover {
+    max-width: 400px !important;
+    transition: max-width 300ms ease-out !important;
+}
+
+
+.status #statusHelp {
+    position: relative !important;
+}
+
+.status #barDock {
+    position: absolute !important;
+    right: -3px !important;
+    z-index: 8 !important;
+    color: var(--b3-theme-on-background) !important;
+}
+
+.status #statusHelp svg, .status #barDock svg {
+    color: var(--b3-theme-on-background) !important;
+}
+
+.status #barDock:before {
+    right: unset !important;
+    left: 0px !important;
+    transform: rotateY(180deg) !important;
+}
+
+.status #barDock:after {
+    left: unset !important;
+    right: 100% !important;
+}
+
+.status > .fn__flex-1 {
+    position: relative !important;
+    width: 0px !important;
+    right: 0px !important;
+    flex: 0 !important;
+}
+
+
+.status__backgroundtask {
+    margin: 0px 0px 7px 0px !important;
+    padding: 0px 0px 0px 8px !important;
+    border-radius: 5px !important;
+    height: 26px !important;
+    line-height: 26px !important;
+}
+
+
+.body--window #status {
+    right: -22px !important;
+    bottom: -12px !important;
+    border-radius: 6px 0 0 0 !important;
+}
+
+.fn__flex-1:has(#dockRight.fn__none) ~ #status {
+    right: 7px !important;
+}
+
+.status .toolbar__item {
+    height: 26px !important;
+}
+
+#status .toolbar__item span {
+    margin: 3px !important;
+    font-size: 12px !important;
+}
+
+#dockBottom:not(.fn__none) + #status {
+    background-color: transparent !important;
+}
