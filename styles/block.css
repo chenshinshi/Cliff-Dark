@@ -148,6 +148,10 @@ div.list div.bq {
 div[data-type="NodeSuperBlock"] > [data-node-id] {
   margin-left: 0;
 }
+.layout-tab-container.fn__flex-1 .card__main{background-color:transparent;padding-bottom:23px;margin-top:-7px}
+.layout-tab-container.fn__flex-1 .card__empty{background-color:transparent}
+.layout-tab-container.fn__flex-1 .card__main .block__icons{margin-bottom:-10px}
+
 /*************************media**************************/
 .b3-typography audio, .protyle-wysiwyg audio{mix-blend-mode:soft-light}
 .protyle-background__img img,.b3-typography img, .protyle-wysiwyg img {

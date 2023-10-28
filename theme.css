@@ -417,8 +417,9 @@ transform: translateZ(0);
 
 /*背景遮罩*/
 .b3-dialog__scrim {
-    background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.618))
+    background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.618));
 }
+.b3-dialog--open .b3-dialog__scrim{opacity:0.3}
 
 /*内容容器间距*/
 #layouts > .fn__flex-1 {
