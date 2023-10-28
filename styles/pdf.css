@@ -1,5 +1,6 @@
 .pdf__rect>div {
    border-radius:0px !important;
+  mix-blend-mode:multiply;
 }
 .pdf__outer.pdf__outer--dark .pdf__rect [style*="background-color"]{background-color:transparent !important;border-top:none !important;border-left:none !important;border-right:none !important}
 

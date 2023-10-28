@@ -450,3 +450,5 @@ transform: translateZ(0);
 .toolbar__window .toolbar__item{padding:5px 10px}
 
 .protyle-hint .b3-list-item:hover:not(.b3-list-item--focus),.protyle-hint .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom){background-color:var(--b3-theme-primary-lighter)}
+
+.config-account__center--text .b3-form__icon.fn__block::before{content:"自 2020 年8 月31 日第一次公開版本以來，思源筆記已累計發版 481 次，解決用戶需求與反饋 9257 次，提交代碼 10189 次，背後無數次的辛勤付出與長期堅持不懈的更新都離不開您的支持與回饋。\a\a思源筆記的發展離不開你的支持，我們會繼續用心做好產品，提供你更好的知識管理體驗。";display:block;position:absolute;bottom:40px;white-space:pre-wrap}
