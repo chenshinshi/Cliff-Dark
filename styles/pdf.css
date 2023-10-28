@@ -13,3 +13,7 @@
 
 #sidebarContainer{background-color:transparent}
 .textLayer .highlight.appended{background-color:var(--b3-theme-primary);border:2px solid var(--b3-theme-primary)}
+.pdf__outer .textLayer, .pdf__outer .pdf__resize{mix-blend-mode:unset}
+.pdf__outer--dark .textLayer{background-color:#ffffff2b}
+
+.toolbarField.pageNumber{background-color:transparent}

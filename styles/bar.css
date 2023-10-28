@@ -2,6 +2,7 @@
 #toolbar.toolbar.fn__flex{
   background-color: #00000000;
   height:32px;
+  width:fit-content;border-radius:0px 0px 5px 0px
 }
 .toolbar #drag{
    display: none;
@@ -17,6 +18,15 @@
 #dockRight {
   background-color: transparent !important;
 }
+.dock__item{margin:0px 0px;padding:10px 4px;border-radius:0px;}
+.dock svg{width:12px;height:12px}
+.dock--vertical{width:24px;}
+.dock#dockLeft{border-right:none}
+.dock#dockRight{border-left:none}
+.dock#dockLeft .dock__item:first-child{border-radius:0px 5px 0px 0px}
+.dock#dockRight .dock__item:first-child{border-radius:5px 0px 0px 0px}
+.dock#dockLeft .dock__item:last-child{border-radius:0px 0px 5px 0px}
+.dock#dockRight .dock__item:last-child{border-radius:0px 0px 0px 5px}
 
 /*隐藏顶栏，来自Savor*/
 .toolbar{
@@ -24,15 +34,15 @@
 	margin-bottom: -32px;
 	opacity: 0;
 	transition: all 300ms;
-	transform:translateY(-20px);
+/*	transform:translateY(-20px);*/
 	z-index:8;
-	transition-delay: 1000ms;
+/*	transition-delay: 1000ms;*/
     background: #535353 !important;
     /*backdrop-filter: blur(15px) !important;
 transform: translateZ(0);*/}
 .toolbar:hover{
 	opacity: 1;
-	transform:translateY(0px);
+/*	transform:translateY(0px);*/
 	transition: all 300ms;
 }
 #dockLeft,#dockRight {
@@ -66,3 +76,4 @@ transform: translateZ(0);*/}
 .toolbar__item {
     color: rgba(var(--grey-lighten), .34)
 }
+.dock__item--active{background-color:var(--b3-theme-primary-lighter)}
