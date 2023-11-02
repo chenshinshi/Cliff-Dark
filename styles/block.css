@@ -96,7 +96,7 @@ div.list div.bq {
   border-radius: 6px;
 }
 .protyle-linenumber__rows {
-  margin-top: 31px !important;
+  /*margin-top: 31px !important;*/
   background-color: #00000000 !important;
 }
 .code-block {
