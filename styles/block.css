@@ -105,7 +105,7 @@ div.list div.bq {
   border-radius: 12px;
   background: var(--custom-transparent) !important;
   margin-top: 15px !important;
-  padding-top: 32px !important;
+  padding-top: 24px !important;
   border:none;
 }
 .code-block:before {
@@ -121,7 +121,8 @@ div.list div.bq {
   width: 12px;
   z-index: 1;
 }
-
+.b3-typography .hljs, .protyle-wysiwyg .hljs,.protyle-linenumber__rows{padding:0.4em 4px}
+.protyle-wysiwyg .code-block .protyle-action .protyle-action__language{padding-left:1em;margin-top:-3px}
 /***************************embed block**************************/
 .protyle-wysiwyg [data-node-id].render-node[data-type="NodeBlockQueryEmbed"] {
   background: var(--custom-transparent);

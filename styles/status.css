@@ -116,10 +116,11 @@
 }
 
 #status .toolbar__item span {
-    margin: 3px !important;
-    font-size: 12px !important;
+margin: 3px 10px 0px -30px!important;
+    font-size: 1px !important;
+    padding: 10px;
+    color: transparent;
 }
-
 .dock#dockBottom{
 	border-top:none;
 	height: 32px;

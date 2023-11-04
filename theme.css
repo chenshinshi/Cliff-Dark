@@ -154,7 +154,7 @@
   --cliff-tag:var(--morandi-caravan);
   --cliff-tag-background:#3F3D2E;
     --b3-tooltips-color:var(--b3-theme-on-background);
-    --b3-tooltips-background:#2b2b2bdd;
+    --b3-tooltips-background:#54595ddd;
     --b3-transition: all .15s cubic-bezier(0, 0, .2, 1) 0ms;
     --b3-point-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
     --b3-theme-primary: #1ec3b4 !important;
@@ -451,4 +451,10 @@ transform: translateZ(0);
 
 .protyle-hint .b3-list-item:hover:not(.b3-list-item--focus),.protyle-hint .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom){background-color:var(--b3-theme-primary-lighter)}
 
-.config-account__center--text .b3-form__icon.fn__block::before{content:"自 2020 年8 月31 日第一次公開版本以來，思源筆記已累計發版 481 次，解決用戶需求與反饋 9257 次，提交代碼 10189 次，背後無數次的辛勤付出與長期堅持不懈的更新都離不開您的支持與回饋。\a\a思源筆記的發展離不開你的支持，我們會繼續用心做好產品，提供你更好的知識管理體驗。";display:block;position:absolute;bottom:40px;white-space:pre-wrap}
+.config-account__center--text .b3-form__icon.fn__block::before{content:"自 2020 年8 月31 日第一次公開版本以來，思源筆記已累計發版 481 次，解決用戶需求與反饋 9257 次，提交代碼 10189 次，背後無數次的辛勤付出與長期堅持不懈的更新都離不開您的支持與回饋。\a\a思源筆記的發展離不開您的支持，我們會繼續用心做好產品，提供您更好的知識管理體驗。";display:block;position:absolute;bottom:40px;white-space:pre-wrap}
+
+#iconLock{color:var(--b3-theme-error)}
+
+
+.layout-tab-bar.layout-tab-bar--readonly.fn__flex-1[style*="padding-right: 168px"]{padding-right:0px !important}
+
