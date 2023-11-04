@@ -373,13 +373,24 @@ transform: translateZ(0);
 
 
 .protyle-toolbar {
-  background: rgba(var(--color),0.4);
+  background: #2b2b2b;
   padding:0px 4px;
   border-radius:0px;
   /*backdrop-filter: var(--cliff-blur) !important;*/
   box-shadow:var(--b3-point-shadow);
 }
-
+.protyle-toolbar::before{  content: "";
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -3;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  background:rgba(var(--color),0.6);
+}
 .layout__resize {
    z-index:1;
 }
