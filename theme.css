@@ -373,7 +373,7 @@ transform: translateZ(0);
 
 
 .protyle-toolbar {
-  background: #226b65;
+  background: rgba(var(--color),0.4);
   padding:0px 4px;
   border-radius:0px;
   /*backdrop-filter: var(--cliff-blur) !important;*/
