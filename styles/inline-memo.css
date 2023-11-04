@@ -92,14 +92,14 @@ span[data-type~="sub"][data-type~="inline-memo"]
 span[data-type~=block-ref]::before, 
 span[data-type~=file-annotation-ref]::before{
   content: "[[";
-  color: #1ec3b4c7 !important;
+  color: rgba(var(--color),0.78) !important;
 }
 [data-node-id][data-type=block-ref],
 [data-id][data-type=block-ref]::after,
 span[data-type~=block-ref]::after, 
 span[data-type~=file-annotation-ref]::after{
   content: "]]";
-  color: #1ec3b4c7 !important;
+  color: rgba(var(--color),0.78) !important;
 }
 .og-hierachy-navigate-doc-container span.docLinksWrapper [data-type=block-ref]::before,.og-hierachy-navigate-doc-container span.docLinksWrapper [data-type=block-ref]::after {
    display:none;
@@ -107,7 +107,7 @@ span[data-type~=file-annotation-ref]::after{
 /***************************link**************************/
 .protyle-wysiwyg [data-node-id] span[data-type="a"],.protyle-wysiwyg [data-node-id] span[data-type="a"]:hover {
   color: inherit;
-  border-bottom: thin solid #1ec3b4c7;
+  border-bottom: thin solid rgba(var(--color),0.78);
 }
 .protyle-wysiwyg [data-node-id] span[data-type="a"]:not(:empty):not([data-href*="siyuan://"]):not([data-href*="assets/"]){background-color:rgba(240, 246, 252, 0.15);border-radius:100px;padding:4px 10px 3px 10px;font-size:90%;border-bottom:none}
 

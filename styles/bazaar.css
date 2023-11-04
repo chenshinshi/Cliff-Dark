@@ -8,7 +8,7 @@
     box-shadow:unset;
     border:1px solid var(--b3-border-color);
 }
-.counter.fn__flex-center.b3-tooltips.b3-tooltips__w{background-color: var(--b3-theme-primary) !important;color:var(--b3-theme-on-primary)}
+.counter.fn__flex-center.b3-tooltips.b3-tooltips__w,.block__icons .counter{background-color: var(--b3-theme-primary) !important;color:var(--b3-theme-on-primary)}
 
 .config__panel>.b3-tab-bar{
    background-color:#2d2d2d;

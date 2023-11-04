@@ -14,10 +14,11 @@
 @import url('styles/tab.css');
 
 :root {
-  --b3-theme-primary: #1ec3b4;
-  --b3-theme-primary-light: #1ec3b48c;
-  --b3-theme-primary-lighter: #1ec3b459;
-  --b3-theme-primary-lightest: #1ec3b419;
+  --color:30,195,180;
+  --b3-theme-primary: rgb(var(--color));
+  --b3-theme-primary-light: rgba(var(--color),0.54);
+  --b3-theme-primary-lighter:rgba(var(--color),0.34);
+  --b3-theme-primary-lightest:rgba(var(--color),0.1);
   --b3-theme-secondary: #f3a92f;
   --b3-theme-background: #2b2b2b;
   --b3-theme-surface: #2b2b2bee;
@@ -47,7 +48,7 @@
     --b3-font-color3: #ffc000;
     --b3-font-color4: #816405;
     --b3-font-color5: #70ad47;
-    --b3-font-color6: #1ec3b4;
+    --b3-font-color6: var(--b3-theme-primary);
     --b3-font-color7: #1e90ff;
     --b3-font-color8: #5b9bd5;
     --b3-font-color9: #8064a2;
@@ -60,7 +61,7 @@
     --b3-font-background3: #977b00aa;
     --b3-font-background4: #5c8500aa;
     --b3-font-background5: #265100aa;
-    --b3-font-background6: #1ec3b4aa;
+    --b3-font-background6: rgba(var(--color),0.66);
     --b3-font-background7: #005989aa;
     --b3-font-background8: #776190aa;
     --b3-font-background9: #ccc1d9aa;
@@ -157,7 +158,7 @@
     --b3-tooltips-background:#54595ddd;
     --b3-transition: all .15s cubic-bezier(0, 0, .2, 1) 0ms;
     --b3-point-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-    --b3-theme-primary: #1ec3b4 !important;
+   /* --b3-theme-primary: #1ec3b4 !important;*/
     --b3-theme-primary-rgba: 30, 195, 180 !important;
     --b3-theme-on-surface: #cac8c6 !important;
     --grey-lighten: 224, 224, 224 !important;
@@ -458,3 +459,5 @@ transform: translateZ(0);
 
 .layout-tab-bar.layout-tab-bar--readonly.fn__flex-1[style*="padding-right: 168px"]{padding-right:0px !important}
 
+.block__edit.fn__flex-1.protyle{overflow-y:hidden}
+.block__edit.fn__flex-1.protyle .protyle-wysiwyg.protyle-wysiwyg--attr{padding:0px 8px!important}
