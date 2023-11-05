@@ -138,7 +138,7 @@
 /**********************标题样式**********************/
 .b3-typography .h2:after, .b3-typography h2:after, .protyle-wysiwyg .h2:after, .protyle-wysiwyg h2::after{content:"";background-color:var(--b3-theme-primary-lighter);width:100%;display:block;height:2px}
 .b3-typography .h1:after, .b3-typography h1:after, .protyle-wysiwyg .h1:after, .protyle-wysiwyg h1::after{content:"";background-color:var(--b3-theme-primary-lighter);width:100%;display:block;height:5px}
-.b3-typography .h4, .b3-typography h4, .protyle-wysiwyg .h4, .protyle-wysiwyg h4{width:fit-content;background-color:var(--b3-theme-primary-lightest);background-image:linear-gradient(to right,transparent,var(--b3-theme-primary-lighter));padding:1px 10px!important;border-radius:0px !important;text-shadow:1px 1px #122c2a;color:#47afa7}
+.b3-typography .h4, .b3-typography h4, .protyle-wysiwyg .h4, .protyle-wysiwyg h4{width:fit-content;background-color:var(--b3-theme-primary-lightest);background-image:linear-gradient(to right,transparent,var(--b3-theme-primary-lighter));padding:1px 10px!important;border-radius:0px !important;text-shadow:1px 1px #122c2a;color:rgba(var(--color),.8)}
 .b3-typography .h6, .b3-typography h6, .protyle-wysiwyg .h6, .protyle-wysiwyg h6{width:fit-content;border:1px solid;padding:1px 10px!important;border-radius:0px !important;
 font-size:.9em}
 .b3-typography .h5, .b3-typography h5, .protyle-wysiwyg .h5, .protyle-wysiwyg h5{text-decoration:underline;text-underline-offset:5px;color:var(--b3-theme-primary)}
