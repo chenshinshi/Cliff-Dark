@@ -48,11 +48,11 @@
   border-radius: 12px 0 0px 12px;
 }
 
-.b3-dialog:has(.b3-dialog__scrim) .b3-dialog__container .b3-select:hover,
+/* .b3-dialog:has(.b3-dialog__scrim) .b3-dialog__container .b3-select:hover,
 .b3-dialog:has(.b3-dialog__scrim) .b3-dialog__container .b3-select,
 .b3-card {
   background-color: var(--b3-select-background);
-}
+} */
 
 .b3-dialog:has(.b3-dialog__scrim) .b3-dialog__container .layout-tab-bar {
   border-bottom: none
