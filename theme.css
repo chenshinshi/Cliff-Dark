@@ -1,5 +1,4 @@
 @import url('styles/inline-memo.css');
-@import url('styles/outline.css');
 @import url('styles/fullscreen.css');
 @import url('styles/block.css');
 @import url('styles/av.css');
@@ -429,8 +428,8 @@ transform: translateZ(0);
 
 /*背景遮罩*/
 .b3-dialog__scrim {
-    background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.618)) !important;backdrop-filter:blur(15px);
-}
+    background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.618)) !important;/*backdrop-filter:blur(15px);will-change:backdrop-filter*/}
+
 .card__main{background-color:transparent}
 /*内容容器间距*/
 #layouts > .fn__flex-1 {
@@ -475,3 +474,57 @@ transform: translateZ(0);
 
 .config__panel .b3-list-item--focus.b3-list-item .b3-list-item__text::after{display:block;content:"";background-color:var(--b3-theme-primary);border-radius:12px;height:100%;width:3px;position:absolute;right:0px;top:0;transition:all 300ms}
 .config__panel .b3-list-item .b3-list-item__text::after{display:block;content:"";background-color:transparent;border-radius:12px;height:100%;width:3px;position:absolute;right:0px;top:0;transition:all 300ms}
+
+
+.config__tab-container .b3-label:not(.b3-label--inner){box-shadow:unset;}
+
+.protyle-wysiwyg div[memo]::before {
+    content: attr(memo);
+    color: inherit!important;
+    background-color: transparent!important;
+}
+
+.backlinkArea.arco-collapse[data-v-4c948d2a] .backlinkAreaCollapse>.arco-collapse-item-header{background-color:transparent !important}
+.arco-card,.card__empty,.search__list{background-color:var(--transparent) !important}
+.b3-typography img, .protyle-wysiwyg img{border-radius:4px}
+/*.protyle-wysiwyg [data-node-id] span[data-type="a"][data-href^="siyuan://blocks/"]{color:transparent !important}
+.protyle-wysiwyg [data-node-id] span[data-type="a"][data-href^="siyuan://blocks/"]{color:transparent !important}
+.protyle-wysiwyg [data-node-id] span[data-type="a"][data-href^="siyuan://blocks/"]:hover{color:inherit!important;transition:all 300ms}*/
+.protyle-wysiwyg [data-node-id] span[data-type~=a],.protyle-wysiwyg [data-node-id] span[data-type~=block-ref]:not(.av__celltext), .protyle-wysiwyg [data-node-id] span[data-type~=file-annotation-ref]{color:inherit}
+.b3-typography blockquote::before, .b3-typography .bq::before, .protyle-wysiwyg blockquote::before, .protyle-wysiwyg .bq::before{display:none;}
+.b3-typography mark, .b3-typography span[data-type~=mark], .protyle-wysiwyg mark, .protyle-wysiwyg span[data-type~=mark] {
+    background: rgba(255, 212, 0, 0.14) !important;
+    border-bottom: 2px solid rgb(255, 212, 0);
+    box-shadow: unset !important;
+}
+
+.b3-typography u, .b3-typography span[data-type~=u], .protyle-wysiwyg u, .protyle-wysiwyg span[data-type~=u]{border-bottom:1.5px solid var(--b3-theme-primary)}
+
+.b3-switch:checked,.jcsm-switch:checked {
+    background-color: #9999992e!important;
+    border-color: rgba(0, 0, 0, 0);
+}
+.protyle-wysiwyg [data-node-id] span[data-type~=block-ref]:not(.av__celltext), .protyle-wysiwyg [data-node-id] span[data-type~=file-annotation-ref]{opacity:1}
+.b3-switch{border:none}
+.av__gallery-cover{background-color:rgba(0,0,0,.18)}
+.b3-typography strong, .b3-typography span[data-type~=strong], .protyle-wysiwyg strong, .protyle-wysiwyg span[data-type~=strong]{text-shadow:0px 0px 4px var(--b3-theme-primary-light)}
+.protyle-wysiwyg [data-type="NodeHeading"]{text-shadow:0px 1px 4px var(--b3-theme-primary)}
+.b3-dialog:has(.b3-dialog__scrim) .b3-dialog__container:after{content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -3;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+	backdrop-filter: var(--cliff-blur) !important;
+	    transition: backdrop-filter 0.2s ease-in-out;}
+		
+		
+.sy__file .b3-list-item__icon{min-width:20px;max-width:20px;transform:scale(0.6);padding:0px 0px;margin-inline:0px;}
+.sy__file .b3-list-item__toggle {
+   color:var(--b3-theme-primary);
+   opacity:0.6;
+}
