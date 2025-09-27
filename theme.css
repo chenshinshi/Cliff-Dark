@@ -528,3 +528,6 @@ transform: translateZ(0);
    color:var(--b3-theme-primary);
    opacity:0.6;
 }
+.layout-tab-bar{z-index:3}
+#toolbar{z-index:2}
+#toolbar:hover{z-index:4}
